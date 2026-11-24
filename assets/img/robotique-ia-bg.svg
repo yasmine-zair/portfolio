@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <!-- Illustration originale : bras robotique + réseau de neurones + pistes de circuit -->
+  <defs>
+    <linearGradient id="armG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0" x2="1">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity="0"/><stop offset="1" stop-color="#A78BFA" stop-opacity=".9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".35"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#22D3EE" opacity=".25"/></pattern>
+  </defs>
+
+  <!-- Pistes de circuit imprimé -->
+  <g fill="none" stroke="#22D3EE" stroke-width="1.4" opacity=".35">
+    <path d="M0 640h180l40-40h160l30 30h120"/>
+    <path d="M0 700h240l30 30h200"/>
+    <path d="M0 760h120l40-40h90"/>
+    <path d="M1440 120h-200l-40 40h-140"/>
+    <path d="M1440 180h-140l-30-30h-110"/>
+    <path d="M1440 820h-260l-40-40h-120l-30 30h-90"/>
+    <path d="M1440 860h-180l-30-30h-160"/>
+  </g>
+  <g fill="#22D3EE" opacity=".6">
+    <circle cx="530" cy="630" r="4"/><circle cx="470" cy="730" r="4"/><circle cx="250" cy="720" r="4"/>
+    <circle cx="1060" cy="160" r="4"/><circle cx="1160" cy="150" r="4"/><circle cx="900" cy="810" r="4"/><circle cx="1070" cy="830" r="4"/>
+  </g>
+
+  <!-- Réseau de neurones (couches) -->
+  <g opacity=".55">
+    <g stroke="url(#fadeR)" stroke-width="1" fill="none" opacity=".7">
+      <path d="M980 300 1120 240M980 300 1120 320M980 300 1120 400M980 380 1120 240M980 380 1120 320M980 380 1120 400M980 460 1120 320M980 460 1120 400M980 460 1120 480M980 540 1120 400M980 540 1120 480"/>
+      <path d="M1120 240 1260 300M1120 320 1260 300M1120 320 1260 380M1120 400 1260 380M1120 400 1260 460M1120 480 1260 460M1120 240 1260 380M1120 480 1260 380"/>
+      <path d="M1260 300 1380 380M1260 380 1380 380M1260 460 1380 380"/>
+    </g>
+    <g fill="#0B0B10" stroke="#A78BFA" stroke-width="2">
+      <circle cx="980" cy="300" r="9"/><circle cx="980" cy="380" r="9"/><circle cx="980" cy="460" r="9"/><circle cx="980" cy="540" r="9"/>
+      <circle cx="1120" cy="240" r="9"/><circle cx="1120" cy="320" r="9"/><circle cx="1120" cy="400" r="9"/><circle cx="1120" cy="480" r="9"/>
+      <circle cx="1260" cy="300" r="9"/><circle cx="1260" cy="380" r="9"/><circle cx="1260" cy="460" r="9"/>
+    </g>
+    <circle cx="1380" cy="380" r="12" fill="#A78BFA"/>
+  </g>
+
+  <!-- Bras robotique industriel (6 axes, vue de profil) -->
+  <g transform="translate(40 30)">
+    <ellipse cx="300" cy="790" rx="230" ry="26" fill="url(#glow)"/>
+    <rect x="160" y="740" width="280" height="40" rx="8" fill="#0F1A24" stroke="url(#armG)" stroke-width="3"/>
+    <rect x="215" y="680" width="170" height="64" rx="10" fill="#0F1A24" stroke="url(#armG)" stroke-width="3"/>
+    <path d="M232 712h136" stroke="#22D3EE" stroke-width="1.5" opacity=".6"/>
+    <!-- épaule -->
+    <circle cx="300" cy="640" r="58" fill="#0F1A24" stroke="url(#armG)" stroke-width="3"/>
+    <circle cx="300" cy="640" r="22" fill="none" stroke="#22D3EE" stroke-width="3"/>
+    <!-- bras -->
+    <path d="M262 600 395 330l66 30-118 280z" fill="#0F1A24" stroke="url(#armG)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M300 590 410 360" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="6 8" opacity=".7"/>
+    <!-- coude -->
+    <circle cx="428" cy="340" r="48" fill="#0F1A24" stroke="url(#armG)" stroke-width="3"/>
+    <circle cx="428" cy="340" r="17" fill="none" stroke="#22D3EE" stroke-width="3"/>
+    <!-- avant-bras -->
+    <path d="M440 298 690 360l-14 56-246-60z" fill="#0F1A24" stroke="url(#armG)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M470 330 670 380" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="6 8" opacity=".7"/>
+    <!-- poignet -->
+    <circle cx="700" cy="392" r="32" fill="#0F1A24" stroke="url(#armG)" stroke-width="3"/>
+    <circle cx="700" cy="392" r="11" fill="#22D3EE"/>
+    <!-- pince -->
+    <path d="M728 380h40v26h-40" fill="#0F1A24" stroke="url(#armG)" stroke-width="3"/>
+    <path d="M768 384l42-22 10 10-34 22" fill="#0F1A24" stroke="url(#armG)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M768 402l42 22 10-10-34-22" fill="#0F1A24" stroke="url(#armG)" stroke-width="3" stroke-linejoin="round"/>
+    <!-- faisceau capteur / laser -->
+    <path d="M820 393 960 393" stroke="#22D3EE" stroke-width="2" stroke-dasharray="3 7" opacity=".8"/>
+    <circle cx="960" cy="393" r="6" fill="#22D3EE"/>
+    <circle cx="960" cy="393" r="20" fill="none" stroke="#22D3EE" stroke-width="1.5" opacity=".6"/>
+    <!-- câbles -->
+    <path d="M330 700c60-40 80-160 120-300" fill="none" stroke="#3B82F6" stroke-width="2" opacity=".5"/>
+    <!-- repères d'axes -->
+    <g font-family="monospace" font-size="16" fill="#22D3EE" opacity=".75">
+      <text x="372" y="660">J1</text><text x="490" y="300">J2</text><text x="712" y="352">J3</text>
+    </g>
+  </g>
+
+  <!-- trame de points -->
+  <rect width="1440" height="900" fill="url(#dots)" opacity=".4"/>
+</svg>
