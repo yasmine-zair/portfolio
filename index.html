@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yasmine ZAIR — Automatique &amp; Robotique</title>
+  <meta name="description" content="Portfolio de Yasmine ZAIR, étudiante en Master 1 Automatique et Robotique à l'EUPI (Clermont-Ferrand). Recherche un stage de 4 à 5 mois à partir d'avril 2027." />
+  <meta name="theme-color" content="#0B0B10" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yasmine ZAIR — Automatique & Robotique" />
+  <meta property="og:description" content="Étudiante en M1 Automatique et Robotique — stage recherché à partir d'avril 2027, 4 à 5 mois, mobilité nationale." />
+  <meta property="og:image" content="assets/img/yasmine-zair.jpg" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <canvas id="neural-bg" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#accueil" class="brand" aria-label="Yasmine ZAIR — retour en haut">
+        <span class="brand-mark" aria-hidden="true">YZ</span>
+        <span class="brand-text">yasmine<span class="accent">.zair</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Ouvrir le menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <div class="hero-wrap">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <section class="hero container" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="hud-label"><span class="dot" aria-hidden="true"></span> SYSTÈME EN LIGNE · CLERMONT-FERRAND</p>
+        <h1 id="hero-title">
+          <span class="hero-hello">Bonjour, je suis</span>
+          Yasmine <span class="accent-grad">ZAIR</span>
+        </h1>
+        <p class="hero-role">
+          Étudiante en Master 1 <strong>Automatique &amp; Robotique</strong> à l'EUPI
+          <span class="typer" aria-hidden="true">&gt; <span id="typer-text">Robotique mobile</span><span class="caret">_</span></span>
+        </p>
+        <p class="hero-pitch">
+          Je cherche un <strong>stage de 4 à 5 mois à partir d'avril 2027</strong>, partout en France,
+          pour mettre en pratique la régulation, la programmation et la robotique dans un environnement industriel.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projets">
+            Voir mes projets
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/yasmine-zair-9a968137a/" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4V9.5Z"/></svg>
+            Me contacter sur LinkedIn<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span>
+          </a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Disponibilité</dt><dd>Avril 2027</dd></div>
+          <div><dt>Durée</dt><dd>4 – 5 mois</dd></div>
+          <div><dt>Mobilité</dt><dd>Toute la France</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="reticle">
+          <svg class="ring ring-outer" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width=".6" stroke-dasharray="2 6"/></svg>
+          <svg class="ring ring-mid" viewBox="0 0 200 200"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="60 20 10 20"/></svg>
+          <picture>
+            <source srcset="assets/img/yasmine-zair.webp" type="image/webp" />
+            <img src="assets/img/yasmine-zair.jpg" alt="" width="480" height="480" />
+          </picture>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <span class="scan-line"></span>
+        </div>
+        <div class="readout readout-a"><span>ID</span> Y.ZAIR // M1-AR</div>
+        <div class="readout readout-b"><span>MODULES</span> ROS 2 · MATLAB · KiCad</div>
+        <div class="readout readout-c"><span>STATUT</span> <em>Disponible · avr. 2027</em></div>
+      </div>
+    </section>
+    </div>
+
+    <!-- ============ À PROPOS ============ -->
+    <section class="section container" id="apropos" aria-labelledby="apropos-title">
+      <header class="section-head">
+        <p class="section-index">01 / À propos</p>
+        <h2 id="apropos-title">Comprendre les systèmes, puis les faire fonctionner</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Mon intérêt pour l'automatique et la robotique s'est concrétisé à travers des projets
+            universitaires et un stage en milieu industriel. J'aime comprendre comment fonctionne
+            un système, expérimenter, et chercher des solutions concrètes aux problèmes techniques.
+          </p>
+          <p>
+            Je m'intéresse particulièrement à la <strong>robotique mobile</strong> et à l'écosystème
+            <strong>ROS 2</strong>, ainsi qu'à la programmation en <strong>Python, C et C++</strong>,
+            que je continue d'approfondir à travers des applications concrètes.
+          </p>
+          <p>
+            Mes projets menés en trinôme m'ont appris à partager les idées, à répartir les tâches
+            et à collaborer vers un objectif commun. Ils m'ont aussi permis de développer ma
+            rigueur, mon autonomie et ma capacité d'adaptation.
+          </p>
+          <ul class="qualities" aria-label="Qualités">
+            <li>Rigueur</li><li>Autonomie</li><li>Esprit d'équipe</li><li>Adaptabilité</li><li>Curiosité</li>
+          </ul>
+        </div>
+
+        <div class="terminal reveal" role="img" aria-label="Fenêtre de terminal décorative résumant le profil de Yasmine">
+          <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span><p>ros2 — yasmine@eupi</p></div>
+<pre aria-hidden="true"><code><span class="t-prompt">$</span> ros2 node info /yasmine_zair
+<span class="t-key">Node:</span> /yasmine_zair
+  <span class="t-key">Formation:</span>
+    /master1/automatique_robotique  <span class="t-dim">[EUPI · UCA]</span>
+  <span class="t-key">Subscribers:</span>
+    /robotique_mobile   /ros2   /regulation
+  <span class="t-key">Publishers:</span>
+    /python  /c_cpp  /matlab_simulink  /labview
+  <span class="t-key">Services:</span>
+    /stage  <span class="t-ok">→ disponible avril 2027 (4–5 mois)</span>
+<span class="t-prompt">$</span> <span class="caret">_</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARCOURS ============ -->
+    <section class="section container" id="parcours" aria-labelledby="parcours-title">
+      <header class="section-head">
+        <p class="section-index">02 / Parcours</p>
+        <h2 id="parcours-title">Formation &amp; expérience</h2>
+      </header>
+
+      <div class="timeline-grid">
+        <div>
+          <h3 class="col-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+            Formation
+          </h3>
+          <ol class="timeline">
+            <li class="reveal">
+              <p class="t-date">2026 – 2027</p>
+              <h4>Master 1 Automatique et Robotique</h4>
+              <p class="t-place">École Universitaire de Physique et d'Ingénierie (EUPI) · Clermont-Ferrand</p>
+            </li>
+            <li class="reveal">
+              <p class="t-date">2025 – 2026</p>
+              <h4>Licence Sciences pour l'Ingénieur — parcours EEA</h4>
+              <p class="t-place">Électronique, Électrotechnique et Automatique · EUPI, Clermont-Ferrand</p>
+            </li>
+            <li class="reveal">
+              <p class="t-date">2026</p>
+              <h4>Préparation à l'habilitation électrique B1V</h4>
+              <p class="t-place">Université Clermont Auvergne</p>
+            </li>
+            <li class="reveal">
+              <p class="t-date">2021 – 2025</p>
+              <h4>Licence &amp; Master 1 Génie Électrique et Informatique, mention Automatique</h4>
+              <p class="t-place">Université Mouloud Mammeri · Tizi-Ouzou, Algérie</p>
+            </li>
+            <li class="reveal">
+              <p class="t-date">2023 – 2024</p>
+              <h4>Manager d'entreprises — programme SIYB</h4>
+              <p class="t-place">Certifié par l'Organisation Internationale du Travail · ASTRAL Bastos, Tizi-Ouzou</p>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h3 class="col-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            Expérience
+          </h3>
+          <ol class="timeline">
+            <li class="reveal">
+              <p class="t-date">10/2024 – 11/2024</p>
+              <h4>Stage en Automatique — ENIEM</h4>
+              <p class="t-place">Tizi-Ouzou, Algérie</p>
+              <ul class="t-list">
+                <li>Maintenance et diagnostic d'équipements industriels.</li>
+                <li>Installation de capteurs et mise en service, avec suivi d'une station de chromage.</li>
+              </ul>
+            </li>
+            <li class="reveal">
+              <p class="t-date">Depuis 09/2026</p>
+              <h4>Employée polyvalente (CDI, en parallèle des études) — Flunch</h4>
+              <p class="t-place">Clermont-Ferrand</p>
+              <ul class="t-list">
+                <li>Accueil des clients, encaissement et gestion de caisse (formation Cashpad).</li>
+                <li>Mise en place du buffet, préparation et dressage, stand glaces.</li>
+                <li>Service en salle, entretien des espaces, respect des règles d'hygiène.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <div class="cert-card reveal">
+            <h3 class="col-title small">Certifications &amp; permis</h3>
+            <ul class="chips">
+              <li>Habilitation électrique B1V (préparation)</li>
+              <li>SIYB — OIT</li>
+              <li>Permis B</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETS ============ -->
+    <section class="section container" id="projets" aria-labelledby="projets-title">
+      <header class="section-head">
+        <p class="section-index">03 / Projets</p>
+        <h2 id="projets-title">Projets académiques</h2>
+        <p class="section-sub">De la régulation thermique à la robotique mobile : des systèmes conçus, simulés et testés.</p>
+      </header>
+
+      <div class="projects">
+        <!-- Projet 1 -->
+        <article class="project reveal">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 320 180" class="diagram">
+              <defs><marker id="ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z" fill="currentColor"/></marker></defs>
+              <g class="d-line" marker-end="url(#ar1)"><path d="M14 70h36"/></g>
+              <circle cx="64" cy="70" r="12" class="d-node"/>
+              <text x="64" y="74" class="d-txt c">Σ</text>
+              <g class="d-line"><path d="M76 70h24" marker-end="url(#ar1)"/></g>
+              <rect x="102" y="52" width="62" height="36" rx="4" class="d-box"/>
+              <text x="133" y="74" class="d-txt c">PID</text>
+              <g class="d-line"><path d="M164 70h22" marker-end="url(#ar1)"/></g>
+              <rect x="188" y="48" width="84" height="44" rx="4" class="d-box hot"/>
+              <text x="230" y="67" class="d-txt c sm">Banc</text>
+              <text x="230" y="81" class="d-txt c sm">3 paliers</text>
+              <g class="d-line"><path d="M272 70h34" marker-end="url(#ar1)"/></g>
+              <text x="292" y="62" class="d-txt sm">T°</text>
+              <g class="d-line dash"><path d="M290 70v70h-60"/><path d="M150 140H64V84" marker-end="url(#ar1)"/></g>
+              <rect x="150" y="126" width="80" height="28" rx="4" class="d-box"/>
+              <text x="190" y="144" class="d-txt c sm">Capteur T°</text>
+              <text x="10" y="56" class="d-txt sm">consigne</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-meta">2025 – 2026 · Licence EEA · en trinôme</p>
+            <h3>Banc thermique à 3 paliers</h3>
+            <p>Développement d'un système de régulation thermique avec contrôle de la température sur trois paliers, et conception de la carte électronique et de son PCB.</p>
+            <ul class="tags" aria-label="Technologies"><li>Régulation</li><li>Contrôle de température</li><li>KiCad</li><li>PCB</li></ul>
+          </div>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="project reveal">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 320 180" class="diagram robot">
+              <g class="waves"><path d="M228 40q14 14 0 28"/><path d="M240 32q22 22 0 44"/><path d="M252 24q30 30 0 60"/></g>
+              <rect x="110" y="40" width="100" height="62" rx="10" class="d-box"/>
+              <circle cx="140" cy="68" r="8" class="d-eye"/>
+              <circle cx="180" cy="68" r="8" class="d-eye"/>
+              <path d="M160 40V22" class="d-line"/><circle cx="160" cy="18" r="5" class="d-node hot-fill"/>
+              <rect x="96" y="102" width="128" height="26" rx="6" class="d-box"/>
+              <circle cx="120" cy="140" r="16" class="d-wheel"/><circle cx="200" cy="140" r="16" class="d-wheel"/>
+              <path d="M60 160c6-14 18-18 14-34 10 8 16 20 12 34z" class="flame"/>
+              <path d="M66 160c3-8 9-10 8-18 6 6 6 12 4 18z" class="flame-in"/>
+              <g class="d-line dash"><path d="M100 82 78 120"/></g>
+              <text x="236" y="120" class="d-txt sm">Arduino · C++</text>
+              <text x="236" y="136" class="d-txt sm">servomoteurs</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-meta">2023 – 2024 · Licence Automatique · en trinôme</p>
+            <h3>Robot anti-incendie</h3>
+            <p>Système de détection d'incendie programmé avec Arduino en C++, avec communication sans fil. Conception et simulation du système automatisé (servomoteurs) sous Proteus et SolidWorks.</p>
+            <ul class="tags" aria-label="Technologies"><li>Arduino</li><li>C++</li><li>Sans fil</li><li>Proteus</li><li>SolidWorks</li></ul>
+          </div>
+        </article>
+
+        <!-- Projet 3 -->
+        <article class="project reveal">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 320 180" class="diagram">
+              <rect x="20" y="40" width="110" height="44" rx="4" class="d-box"/>
+              <text x="75" y="68" class="d-txt c mono lg">MMXXVI</text>
+              <text x="20" y="30" class="d-txt sm">entrée (vérifiée)</text>
+              <g class="d-line"><path d="M130 62h40" marker-end="url(#ar1)"/></g>
+              <rect x="172" y="40" width="128" height="44" rx="4" class="d-box ok"/>
+              <text x="236" y="68" class="d-txt c mono lg">2026</text>
+              <text x="172" y="30" class="d-txt sm">résultat</text>
+              <g class="grid-table">
+                <rect x="20" y="104" width="280" height="60" rx="4" class="d-box"/>
+                <path d="M20 124h280M20 144h280M110 104v60" class="d-line thin"/>
+                <text x="30" y="118" class="d-txt sm mono">XIV</text><text x="120" y="118" class="d-txt sm mono">14</text>
+                <text x="30" y="138" class="d-txt sm mono">CDXC</text><text x="120" y="138" class="d-txt sm mono">490</text>
+                <text x="30" y="158" class="d-txt sm mono">MMXXVI</text><text x="120" y="158" class="d-txt sm mono">2026</text>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-meta">2026 · LabVIEW</p>
+            <h3>Convertisseur de nombres romains</h3>
+            <p>Application LabVIEW qui convertit des nombres romains en nombres arabes, avec vérification des saisies et affichage des résultats sous forme de tableau.</p>
+            <ul class="tags" aria-label="Technologies"><li>LabVIEW</li><li>Validation des entrées</li><li>Interface</li></ul>
+          </div>
+        </article>
+
+        <!-- Stage -->
+        <article class="project reveal">
+          <div class="project-visual" aria-hidden="true">
+            <svg viewBox="0 0 320 180" class="diagram">
+              <rect x="30" y="60" width="160" height="80" rx="6" class="d-box"/>
+              <rect x="44" y="74" width="50" height="52" rx="3" class="d-box hot"/>
+              <text x="69" y="104" class="d-txt c sm">bain</text>
+              <rect x="104" y="74" width="72" height="52" rx="3" class="d-box"/>
+              <text x="140" y="104" class="d-txt c sm">chromage</text>
+              <circle cx="69" cy="48" r="8" class="d-node"/><path d="M69 56v18" class="d-line"/>
+              <text x="82" y="44" class="d-txt sm">capteur</text>
+              <g class="d-line dash"><path d="M77 48h135"/></g>
+              <rect x="214" y="30" width="80" height="110" rx="6" class="d-box"/>
+              <text x="254" y="50" class="d-txt c sm">SUIVI</text>
+              <polyline class="d-curve" points="224,120 236,104 248,110 260,88 272,94 284,72"/>
+              <circle cx="284" cy="72" r="3" class="d-node hot-fill"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-meta">10 – 11/2024 · Stage · ENIEM</p>
+            <h3>Instrumentation d'une station de chromage</h3>
+            <p>En milieu industriel : maintenance et diagnostic d'équipements, installation de capteurs et mise en service, avec suivi d'une station de chromage.</p>
+            <ul class="tags" aria-label="Compétences mobilisées"><li>Capteurs</li><li>Mise en service</li><li>Diagnostic</li><li>Maintenance</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ COMPÉTENCES ============ -->
+    <section class="section container" id="competences" aria-labelledby="competences-title">
+      <header class="section-head">
+        <p class="section-index">04 / Compétences</p>
+        <h2 id="competences-title">Boîte à outils</h2>
+      </header>
+
+      <div class="skills">
+        <section class="skill-panel reveal" aria-labelledby="sk-auto">
+          <div class="panel-head">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="14" height="10" rx="2"/><path d="M12 8V4M9 4h6M9 13h.01M15 13h.01M3 13h2M19 13h2"/></svg>
+            <h3 id="sk-auto">Automatisation &amp; Robotique</h3>
+          </div>
+          <ul class="chips"><li>ROS 2</li><li>MATLAB / Simulink</li><li>LabVIEW</li><li>TIA Portal</li><li>Ladder</li><li>Arduino</li></ul>
+        </section>
+        <section class="skill-panel reveal" aria-labelledby="sk-prog">
+          <div class="panel-head">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></svg>
+            <h3 id="sk-prog">Programmation</h3>
+          </div>
+          <ul class="chips"><li>Python</li><li>C / C++</li><li>Assembleur</li><li>emu8086</li></ul>
+        </section>
+        <section class="skill-panel reveal" aria-labelledby="sk-elec">
+          <div class="panel-head">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+            <h3 id="sk-elec">Électronique, simulation &amp; CAO</h3>
+          </div>
+          <ul class="chips"><li>KiCad</li><li>Proteus</li><li>PSpice</li><li>LTspice</li><li>SolidWorks</li><li>Festo FluidSIM</li></ul>
+        </section>
+        <section class="skill-panel reveal" aria-labelledby="sk-env">
+          <div class="panel-head">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            <h3 id="sk-env">Environnements &amp; bureautique</h3>
+          </div>
+          <ul class="chips"><li>Linux</li><li>Windows</li><li>Notions de cybersécurité</li><li>Word</li><li>Excel</li><li>PowerPoint</li></ul>
+        </section>
+      </div>
+
+      <div class="extras">
+        <section class="extra reveal" aria-labelledby="sk-lang">
+          <h3 id="sk-lang" class="col-title small">Langues</h3>
+          <ul class="chips"><li>Français</li><li>Anglais</li><li>Arabe</li><li>Kabyle</li></ul>
+        </section>
+        <section class="extra reveal" aria-labelledby="sk-int">
+          <h3 id="sk-int" class="col-title small">Centres d'intérêt</h3>
+          <ul class="interests">
+            <li><strong>Lecture</strong> scientifique et technique (ouvrages Dunod)</li>
+            <li><strong>Nature</strong> — randonnée en montagne</li>
+            <li><strong>Sport</strong> — cardio et endurance</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card reveal">
+        <span class="corner tl" aria-hidden="true"></span><span class="corner tr" aria-hidden="true"></span><span class="corner bl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
+        <p class="section-index">05 / Contact</p>
+        <h2 id="contact-title">Un stage en automatique ou en robotique&nbsp;?</h2>
+        <p class="contact-lead">Disponible à partir d'avril 2027 pour 4 à 5 mois, mobile sur toute la France. Écrivez-moi sur LinkedIn, je serais heureuse d'échanger sur vos projets.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/yasmine-zair-9a968137a/" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4V9.5Z"/></svg>
+            Me contacter sur LinkedIn<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span>
+          </a>
+        </div>
+        <p class="contact-loc">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Clermont-Ferrand (63000), France
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Yasmine ZAIR</p>
+      <a href="#accueil" class="to-top">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
