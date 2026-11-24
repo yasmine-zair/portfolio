@@ -77,7 +77,7 @@ body::before { /* grille technique */
 .site-header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   background: rgba(11,11,16,.72); border-bottom: 1px solid var(--color-border); }
 .nav { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--font-mono); font-size: .95rem; }
+.brand { display: flex; align-items: center; gap: 10px; min-height: 44px; text-decoration: none; font-family: var(--font-mono); font-size: .95rem; }
 .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--color-accent); color: var(--color-accent);
   border-radius: 6px; font-weight: 500; font-size: .8rem; box-shadow: var(--glow); }
 .nav-menu { display: flex; align-items: center; gap: var(--space-2); }
@@ -121,7 +121,7 @@ body::before { /* grille technique */
 .hero-cta { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
 .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--space-3); margin: var(--space-8) 0 0; max-width: 520px; }
 .hero-stats div { border-left: 2px solid var(--color-accent); padding: 4px 0 4px 14px; }
-.hero-stats dt { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--color-muted-foreground); }
+.hero-stats dt { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--color-muted-foreground); }
 .hero-stats dd { margin: 2px 0 0; font-family: var(--font-heading); font-weight: 600; font-size: 1rem; }
 
 .hero-visual { position: relative; justify-self: center; width: min(320px, 100%); aspect-ratio: 1; }
@@ -215,7 +215,7 @@ body::before { /* grille technique */
 .project h3 { font-size: 1.08rem; }
 .project-body > p:not(.project-meta) { color: var(--color-muted-foreground); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; }
-.tags li { font-family: var(--font-mono); font-size: .74rem; padding: 4px 10px; border-radius: 3px; color: var(--color-accent); background: rgba(34,211,238,.08); border: 1px solid rgba(34,211,238,.22); }
+.tags li { font-family: var(--font-mono); font-size: .78rem; padding: 4px 10px; border-radius: 3px; color: var(--color-accent); background: rgba(34,211,238,.08); border: 1px solid rgba(34,211,238,.22); }
 
 /* Diagrammes SVG */
 .diagram { font-family: var(--font-mono); }
@@ -296,7 +296,8 @@ body::before { /* grille technique */
   .hero-cta .btn, .contact-actions .btn { width: 100%; justify-content: center; }
   .readout { font-size: .64rem; }
   .readout-b { display: none; }
-  .hud-label { font-size: .66rem; letter-spacing: .06em; }
+  .hud-label { font-size: .75rem; letter-spacing: .02em; }
+  .hud-long { display: none; }
   .readout-a { left: -2%; } .readout-b { right: -2%; }
   .contact-card { padding: var(--space-12) var(--space-6); }
   .contact-actions .btn { font-size: .92rem; }
