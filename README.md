@@ -35,3 +35,12 @@ python -m http.server 8000
 ## Modifier le contenu
 
 Tout le texte est dans `index.html`. Pour changer l'image de fond de l'accueil, remplacer `assets/img/robotique-ia-bg.svg` (ou modifier `.hero-bg` dans `css/styles.css` pour pointer vers une photo).
+
+## Tests automatiques (Playwright)
+
+```bash
+pip install playwright && playwright install chromium
+python tests/qa.py
+```
+
+Le script vérifie, sur 5 tailles d'écran (320 px à 1920 px) : défilement horizontal, images cassées, ancres, taille des cibles tactiles (44 px), tailles de texte, contraste, hiérarchie des titres, menu mobile (ouverture, Échap, fermeture au clic), navigation, lien d'évitement au clavier, mouvement réduit et affichage sans JavaScript.
